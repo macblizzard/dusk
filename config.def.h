@@ -343,7 +343,7 @@ static const BarRule barrules[] = {
 	{  0,       0,     0,       5,   5,   7,     BAR_ALIGN_LEFT,         size_status,              draw_status,             click_status,             NULL,                     "status7" },
 	{  0,       0,     0,       0,   0,   PWRL,  BAR_ALIGN_LEFT,         size_powerline,           draw_powerline,          NULL,                     NULL,                     "powerline join" },
 	{ -1,       0,     0,       0,   0,   PWRL,  BAR_ALIGN_LEFT,         size_workspaces,          draw_workspaces,         click_workspaces,         hover_workspaces,         "workspaces" },
-	{  0,       0,     6,       5,   5,   0,     BAR_ALIGN_RIGHT,        size_systray,             draw_systray,            click_systray,            NULL,                     "systray" },
+	{ -1,       0,     6,       5,   5,   0,     BAR_ALIGN_RIGHT,        size_systray,             draw_systray,            click_systray,            NULL,                     "systray" },
 	{  0,       0,     0,       0,   0,   PWRL,  BAR_ALIGN_RIGHT,        size_powerline,           draw_powerline,          NULL,                     NULL,                     "powerline join" },
 	{ -1,       0,     0,       0,   0,   PWRL,  BAR_ALIGN_LEFT,         size_powerline,           draw_powerline,          NULL,                     NULL,                     "powerline join" },
 	{ -1,       0,     5,       0,   0,   0,     BAR_ALIGN_LEFT,         size_ltsymbol,            draw_ltsymbol,           click_ltsymbol,           NULL,                     "layout" },
@@ -522,9 +522,9 @@ static Key keys[] = {
 
 	{ KeyPress,   MODKEY,                       XK_backslash,    togglepinnedws,         {0} }, // toggle pinning of currently selected workspace on the current monitor
 	{ KeyPress,   MODKEY,                       XK_z,            showhideclient,         {0} }, // hide the currently selected client (or show if hidden)
-	{ KeyPress,   MODKEY,                       XK_q,            killclient,             {0} }, // close the currently focused window
-	{ KeyPress,   MODKEY|Shift,                 XK_q,            restart,                {0} }, // restart dusk
-	{ KeyPress,   MODKEY|Ctrl|Alt,              XK_q,            quit,                   {0} }, // exit dusk
+	{ KeyPress,   MODKEY,                       XK_e,            killclient,             {0} }, // close the currently focused window
+	{ KeyPress,   MODKEY|Shift,                 XK_e,            restart,                {0} }, // restart dusk
+	{ KeyPress,   MODKEY|Ctrl|Alt,              XK_e,            quit,                   {0} }, // exit dusk
 
 	{ KeyPress,   MODKEY,                       XK_v,            group,                  {0} }, // groups floating clients together
 	{ KeyPress,   MODKEY|Shift,                 XK_v,            ungroup,                {0} }, // ungroups floating clients
@@ -579,7 +579,7 @@ static Key keys[] = {
 //	STACKKEYS(AltGr|Shift,                                       stackswap)                            // swap the currently focused client with the nth client in the stack
 
 	SCRATCHKEYS(MODKEY,                         XK_w,            spcmd_w)
-	SCRATCHKEYS(MODKEY,                         XK_e,            spcmd_e)
+	SCRATCHKEYS(MODKEY,                         XK_s,            spcmd_e)
 	SCRATCHKEYS(MODKEY,                         XK_r,            spcmd_r)
 
 	WSKEYS(MODKEY,                              XK_1,            "1")
