@@ -114,7 +114,7 @@ static int flexwintitle_hiddenweight     = 0;  // hidden window title weight
 static int flexwintitle_floatweight      = 0;  // floating window title weight, set to 0 to not show floating windows
 static int flexwintitle_separator        = 0;  // width of client separator
 
-static const char *fonts[]               = { "monospace:size=10" };
+static const char *fonts[]               = { "JetBrains Mono:size=10", "JoyPixels:pixelsize=11:antialias=true:autohint=true" };
 static       char dmenufont[]            = "monospace:size=10";
 
 static char dmenunormfgcolor[] = "#BE89AE";
